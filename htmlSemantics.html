@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Other Lists</title>
+    <link rel="stylesheet" href="htmlTable.css">
+    <style>
+        .all-browsers {
+          margin: 0;
+          padding: 5px;
+          background-color: powderblue;
+        }
+        
+        .all-browsers > h3, .browsers {
+          margin: 10px;
+          padding: 5px;
+        }
+        
+        .browsers {
+          background: white;
+        }
+        
+        .browsers > h2, p {
+          margin: 4px;
+          font-size: 90%;
+        }
+        aside {
+            width: 30%;
+            padding-left: 15px;
+            margin-left: 15px;
+            float: right;
+            font-style: italic;
+            background-color: lightgray;
+        }
+        </style>
+  </head>
+  <body>
+    <h1><span>Semantic Elements:</span></h1>
+    <p>Semantic elements=elements with a meaning. It clearly describes its meaning to both the browser and the developer.
+    </p>
+    <p>Examples of <em><strong>non-semantic</strong></em> elements:</p>
+    <ul>
+        <li><em>div</em></Em></li>
+        <li><em>span</em></li>
+    </ul>
+    <p>Examples of <em><strong>semantic</strong></em> elements:</p>
+    <ul>
+        <li><em>form</em></li>
+        <li><em>table</em></li>
+        <li><em>article</em></li>
+    </ul>
+    <h2><span>Semantic elements in HTML:</span></h2>
+    <ul><li><img src="https://www.w3schools.com/html/img_sem_elements.gif" alt=""></li></ul>
+    <ul>
+        <li>article</li>
+        <li>aside</li>
+        <li>details</li>
+        <li>figcaption</li>
+        <li>figure</li>
+        <li>footer</li>
+        <li>header</li>
+        <li>main</li>
+        <li>mark</li>
+        <li>nav</li>
+        <li>section</li>
+        <li>summary</li>
+        <li>time</li>
+    </ul>
+    <h2><span>HTML <em>section</em> element:</span></h2>
+    <p>The <em>section</em> element defines a section in a document.</p>
+    <p>According to W3C's HTML documentation: "A section is a thematic grouping of content,typically with a heading.</p>
+    <p>Examples of where a <em>section</em> element can be used:</p>
+    <ul>
+        <li>Chapters</li>
+        <li>Introduction</li>
+        <li>News items</li>
+        <li>Contact information</li>
+    </ul>
+    <p>A web page could normally be split into sections for introduction,content,and contact information.</p>
+    <p>Example:</p>
+    <ul>
+        <li>
+            <section>
+            <h1>WWF</h1>
+            <p>
+                The World Wide Fund for Nature (WWF) is an international organization working on issues 
+            regarding the conservation, research and restoration of the environment, 
+            formerly named the World Wildlife Fund. WWF was founded in 1961.
+            </p>
+            </section>
+        </li>
+    </ul>
+    <h2><span>HTML <em>article</em> element:</span></h2>
+    <p>The <em>article</em> element specifies independent, self-contained content.</p>
+    <p>An article should make sense on its own, and it should be possible to distribute it independently from the 
+        rest of the web site.</p>
+    <p>Examples of where a <em>article</em> element can be used:</p>
+    <ul>
+        <li>Forum posts</li>
+        <li>Blog posts</li>
+        <li>User comments</li>
+        <li>Product cards</li>
+        <li>Newspaper articles</li>
+    </ul>
+   
+    <p>Examples:</p>
+
+    <article class="all-browsers">
+        <h3>Most Popular Browsers</h3>
+            <article class="browsers">
+            <h4>Google Chrome</h4>
+            <p>
+                Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!
+            </p>
+            </article>
+            <article class="browsers">
+            <h4>Mozilla Firefox</h4>
+            <p>
+                Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.
+            </p>
+            </article>
+            </article>
+            <hr>
+    <h2><span>HTML <em>header</em> element:</span></h2>
+    <p>The <em>header</em> element represents a container for introductory content or a set of navigational links.</p>
+    
+            <p>A <em>header</em> element typically contains:</p>
+            <ul>
+                <li>one or more heading elements</li>
+                <li>logo or icon</li>
+                <li>authorship information</li>
+                
+            </ul>
+            <p>Note: You can have several <em>header</em> elements in one HTML document. 
+                However, <em>header</em> cannot be placed within a <em>footer</em>, <em>address</em> or another <em>header</em> element.</p>
+            <p>Example:</p>
+            <ul>
+                <li>
+                    <article>
+                        <header>
+                          <h1>What Does WWF Do?</h1>
+                          <p>WWF's mission:</p>
+                        </header>
+                        <p>WWF's mission is to stop the degradation of our planet's natural environment,
+                        and build a future in which humans live in harmony with nature.</p>
+                        </article>
+                </li>
+            </ul> 
+            <hr>
+            <h2><span>HTML <em>footer</em> element:</span></h2>
+            <p>The <em>footer</em> element defines a footer for a document or section.</p>
+    
+            <p>A <em>footer</em> element typically contains:</p>
+            <ul>
+                <li>authorship information</li>
+                <li>copyright information</li>
+                <li>contact information</li>
+                <li>sitemap</li>
+                <li>back to top links</li>
+                <li>related documents</li>
+                
+            </ul>
+            <p>You can have several <em>footer</em> elements in one document.</p>
+            <p>Example:</p>
+            <ul>
+                <li>
+                    <footer>
+                        <p>Author: Hege Refsnes</p>
+                        <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+                      </footer>
+                </li>
+            </ul>  
+            <hr>
+            <h2><span>HTML <em>nav</em> element:</span></h2>
+            <p>The <em>nav</em> element defines a set of navigation links.</p>
+
+            <p>Example:</p>
+            <ul>
+                <li>
+                    <nav>
+                        <a href="/html/">HTML</a> |
+                        <a href="/css/">CSS</a> |
+                        <a href="/js/">JavaScript</a> |
+                        <a href="/jquery/">jQuery</a>
+                      </nav>
+                </li>
+            </ul> 
+            <hr>
+            <hr>
+            <h2><span>HTML <em>aside</em> element:</span></h2>
+            <p>The <em>aside</em> element defines some content aside from the content it is placed in (like a sidebar).</p>
+            <p>The <em>aside</em> content should be indirectly related to the surrounding content.</p>
+
+            <p>Example:</p>
+            <ul>
+                <li>
+                    <p>My family and I visited The Epcot center this summer.
+                    The weather was nice, and Epcot was amazing! 
+                    I had a great summer together with my <br> family!</p>
+                    <aside>
+                    <p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions,
+                         international pavilions, award-winning fireworks and seasonal special events.</p>
+                    </aside>
+                    <p>My family and I visited The Epcot center this summer. 
+                    The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+                    <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! 
+                        I had a great summer together with my family!</p>
+
+                </li>
+            </ul> 
+            <hr>
+            <h2><span>HTML <em>figure</em> and <em>figure-caption</em> elements</span></h2>
+            <p>The <em>figure</em> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</p>
+            <p>The <em>fig-caption</em>  tag defines a caption for a <em>figure</em> element. 
+                The <em>fig-caption</em> element can be placed as the first or as the last child of a <em>figure</em> element..</p>
+            <p>The <em>img</em> element defines the actual image/illustration. </p>
+            <p>Example:</p>
+            <ul>
+                <li>
+                    <h2>Places to Visit</h2>
+                    <p>Puglia's most famous sight is the unique conical houses (Trulli) found 
+                        in the area around Alberobello, a declared UNESCO World Heritage Site.</p>
+
+                    <figure>
+                        <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt=""><br>
+                        <fig-caption style="text-align:center;">Fig.1 - Trulli, Puglia, Italy.</fig-caption>
+                    </figure>
+
+                </li>
+            </ul> 
+
+        
+    
+    
+  </body>
