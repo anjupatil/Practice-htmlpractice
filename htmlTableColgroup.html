@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Table Colgroup</title>
+  <link rel="stylesheet" href="htmlTable.css">
+  <style media="screen">
+    table.colgroup {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    table.colgroup th {
+      border: 1px solid black;
+    }
+
+    table.colgroup td {
+      border: 1px solid black;
+    }
+
+    table.Multicolgroup {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    table.Multicolgroup th {
+      border: 1px solid black;
+    }
+
+    table.Multicolgroup td {
+      border: 1px solid black;
+    }
+
+
+    table.Emptycolgroup {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    table.Emptycolgroup th {
+      border: 1px solid black;
+    }
+
+    table.Emptycolgroup td {
+      border: 1px solid black;
+    }
+
+
+    table.Hidecolumns {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    table.Hidecolumns th {
+      border: 1px solid black;
+    }
+
+    table.Hidecolumns td {
+      border: 1px solid black;
+    }
+
+
+
+
+
+
+  </style>
+
+</head>
+
+<body style="background-color:#F5ECA2">
+  <h1><span>HTML Table Colgroup</span></h1>
+  <ul>
+    <li>
+      <p>The <em>colgroup</em> element is used to style specific columns of a table.</p>
+    </li>
+    <li>
+      <h2><span>HTML Colgroup</span></h2>
+    </li>
+    <ul>
+      <li>To style first two cols of a table,use <em>colgroup</em> and <em>col</em> elements.</li>
+      <li>The <em>colgroup</em> element used as a container for column soecifications.</li>
+      <li>Each group is specified with <em>col</em> element.</li>
+      <li>The <em>span</em> attribute specifies how many columns that get the style.</li>
+      <li>The <em>style</em> attribute specifies the style to give the columns. </li>
+      <li>Note: The <em>colgroup </em> element must be a child of a <em>table</em> element and should be placed before any other <em>table</em> elements,
+        like <em>thead</em>,<em>tr</em>,<em>td</em> etc,but after the <em>caption</em> element,if present.</li>
+      <ul>
+        <li>
+          <table class="colgroup">
+            <colgroup>
+              <col span="2" style="background-color:powderblue;">
+            </colgroup>
+            <tr>
+              <th>Name</th>
+              <th>Rollno</th>
+              <th>Address</th>
+              <th>Company</th>
+              <th>Phone no</th>
+              <th>Salary</th>
+            </tr>
+            <tr>
+              <td>Abc</td>
+              <td>1</td>
+              <td>qwe</td>
+              <td>qqq</td>
+              <td>1234</td>
+              <td>10000</td>
+            </tr>
+            <tr>
+              <td>Def</td>
+              <td>2</td>
+              <td>rty</td>
+              <td>qqq</td>
+              <td>5678</td>
+              <td>10000</td>
+            </tr>
+            <tr>
+              <td>Ghi</td>
+              <td>3</td>
+              <td>tyu</td>
+              <td>qqq</td>
+              <td>9101</td>
+              <td>10000</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </ul>
+    <li><h2><span>Multiple Col Elements</span></h2></li>
+    <ul>
+      <li>To style more columns with different styles,use more <em>col</em> elements inside the <em>colgroup</em></li>
+      <ul>
+        <li>
+          <table class="Multicolgroup">
+            <colgroup>
+              <col span="2" style="background-color:powderblue;">
+              <col span="2" style="background-color:pink;">
+            </colgroup>
+            <tr>
+              <th>Name</th>
+              <th>Rollno</th>
+              <th>Address</th>
+              <th>Company</th>
+              <th>Phone no</th>
+              <th>Salary</th>
+            </tr>
+            <tr>
+              <td>Abc</td>
+              <td>1</td>
+              <td>qwe</td>
+              <td>qqq</td>
+              <td>1234</td>
+              <td>10000</td>
+            </tr>
+            <tr>
+              <td>Def</td>
+              <td>2</td>
+              <td>rty</td>
+              <td>qqq</td>
+              <td>5678</td>
+              <td>10000</td>
+            </tr>
+            <tr>
+              <td>Ghi</td>
+              <td>3</td>
+              <td>tyu</td>
+              <td>qqq</td>
+              <td>9101</td>
+              <td>10000</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </ul>
+    <li><h2><span>Empty Colgroups</span></h2></li>
+    <ul>
+      <li>To style more columns in the middle of a table,insert a "empty" <em>col</em> element(with no styles) for the columns before:</li>
+      <ul>
+        <li>
+          <table class="Emptycolgroup">
+            <colgroup>
+              <col span="3" >
+              <col span="2" style="background-color:pink;">
+            </colgroup>
+            <tr>
+              <th>Name</th>
+              <th>Rollno</th>
+              <th>Address</th>
+              <th>Company</th>
+              <th>Phone no</th>
+              <th>Salary</th>
+            </tr>
+            <tr>
+              <td>Abc</td>
+              <td>1</td>
+              <td>qwe</td>
+              <td>qqq</td>
+              <td>1234</td>
+              <td>10000</td>
+            </tr>
+            <tr>
+              <td>Def</td>
+              <td>2</td>
+              <td>rty</td>
+              <td>qqq</td>
+              <td>5678</td>
+              <td>10000</td>
+            </tr>
+            <tr>
+              <td>Ghi</td>
+              <td>3</td>
+              <td>tyu</td>
+              <td>qqq</td>
+              <td>9101</td>
+              <td>10000</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </ul>
+    <li><h2><span>Hide Columns</span></h2></li>
+    <ul>
+      <li>Hide columns with <em>visibility:collapse</em> property:</li>
+      <ul>
+        <li>
+          <table class="Hidecolumns">
+            <colgroup>
+              <col span="3" >
+              <col span="2" style="visibility:collapse;">
+            </colgroup>
+            <tr>
+              <th>Name</th>
+              <th>Rollno</th>
+              <th>Address</th>
+              <th>Company</th>
+              <th>Phone no</th>
+              <th>Salary</th>
+            </tr>
+            <tr>
+              <td>Abc</td>
+              <td>1</td>
+              <td>qwe</td>
+              <td>qqq</td>
+              <td>1234</td>
+              <td>10000</td>
+            </tr>
+            <tr>
+              <td>Def</td>
+              <td>2</td>
+              <td>rty</td>
+              <td>qqq</td>
+              <td>5678</td>
+              <td>10000</td>
+            </tr>
+            <tr>
+              <td>Ghi</td>
+              <td>3</td>
+              <td>tyu</td>
+              <td>qqq</td>
+              <td>9101</td>
+              <td>10000</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+
+
+  </ul>
+
+
+</body>
+
+</html>

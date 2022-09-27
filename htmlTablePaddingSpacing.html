@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding and Spacing</title>
+      <link rel="stylesheet" href="htmlTable.css">
+    <style media="screen">
+     table.tb1 {
+       border:1px solid red;
+       border-collapse:collapse;
+     }
+     table.tb1 th {
+       padding:10px;
+       border:1px solid red;
+     }
+     table.tb1 td {
+       padding:10px;
+       border:1px solid red;
+     }
+
+     table.tb2{
+       border:1px solid blue;
+       border-collapse:collapse;
+     }
+     table.tb2 th {
+       padding-top:10px;
+       padding-bottom:20px;
+       padding-left:30px;
+       padding-right:40px;
+       border:1px solid red;
+     }
+     table.tb2 td {
+       padding-top:10px;
+       padding-bottom:20px;
+       padding-left:30px;
+       padding-right:40px;
+       border:1px solid red;
+     }
+     table.tb3{
+       border:1px solid black;
+       border-collapse:seperate;
+       border-spacing:10px;
+
+     }
+     table.tb3 th {
+        border:1px solid black;
+
+
+     }
+     table.tb3 td {
+        border:1px solid black;
+
+     }
+
+    </style>
+  </head>
+  <body style="background-color:#F5ECA2">
+    <h1><span>Padding and Spacing</span></h1>
+    <ul>
+      <li><p>HTML Tables can adjust thr padding inside the cells,and also the space between the cells.</p></li>
+      <li><h2><span>HTML Table-Cell Padding</span></h2></li>
+      <ul>
+        <li>Cell padding is the space between the cell edges and the cell content.</li>
+        <li>Be default the padding is set to 0.</li>
+        <li>Use <em>padding</em> property.</li>
+        <ul>
+          <li><table class="tb1">
+            <tr>
+              <th>Name</th>
+              <th>Rollno</th>
+            </tr>
+            <tr>
+              <td>Abc</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Def</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Efg</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Mno</td>
+              <td>4</td>
+            </tr>
+
+          </table></li>
+        </ul>
+        <li>To add the padding only above the content,use the <em>padding-top</em> property.Similarly,<em>padding-bottom</em>,<em>padding-left</em>,<em>padding-right</em> properties.</li>
+        <ul>
+          <li><table class="tb2">
+            <tr>
+              <th>Name</th>
+              <th>Rollno</th>
+            </tr>
+            <tr>
+              <td>Abc</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Def</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Efg</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Mno</td>
+              <td>4</td>
+            </tr>
+
+          </table></li>
+        </ul>
+
+      </ul>
+      <li><h2><span>HTML Table-Cell Spacing</span></h2></li>
+      <ul>
+        <li>Cell Spacing is the space between each cell.</li>
+        <li>By default the space is set to 2 pixels.</li>
+        <li>Use <em>border-spacing</em> property on the <em>table</em> element.</li>
+        <ul>
+          <li><table class="tb3">
+            <tr>
+              <th>Name</th>
+              <th>Rollno</th>
+            </tr>
+            <tr>
+              <td>Abc</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Def</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Efg</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Mno</td>
+              <td>4</td>
+            </tr>
+
+          </table></li>
+        </ul>
+      </ul>
+
+    </ul>
+  </body>
+</html>

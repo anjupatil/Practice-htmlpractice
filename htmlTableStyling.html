@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Styling</title>
+    <link rel="stylesheet" href="htmlTable.css">
+    <style media="screen">
+      table.zebrastripes {
+        border:1px solid red;
+        padding:10px;
+        border-collapse:collapse;
+      }
+      table.zebrastripes th,td {
+        border:1px solid red;
+        padding-top:20px;
+        padding-right:20px;
+      }
+      table.zebrastripes th{
+        background-color:violet;
+      }
+      table.zebrastripes tr:nth-child(even){
+        background-color:powderblue;
+      }
+    table.verticalzstripes td:nth-child(even),verticalzstripes.table th:nth-child(even)
+      {
+        background-color:powderblue;
+        border:1px solid red;
+      }
+      table.verticalzstripes {
+        border:1px solid red;
+        border-collapse:collapse;
+      }
+      table.verticalzstripes th{
+        border:1px solid red;
+      }
+      table.combine{
+          border:1px solid red;
+          border-collapse:collapse;
+      }
+      table.combine tr:nth-child(even){
+        background-color:rgba(150,212,212,0.4);
+      }
+      table.combine td:nth-child(even),  table.combine td:nth-child(even){
+        background-color:rgba(150,212,212,0.4);
+      }
+      table.combine th{
+        border:1px solid red;
+      }
+      table.horizontalDiv  {
+        border:0px ;
+        padding-top:20px;
+        padding-right:20px;
+        border-collapse:collapse;
+        border-bottom:1px solid black;
+      }
+      table.horizontalDiv th {
+        border:0px ;
+        border-bottom:1px solid black;
+      }
+      table.horizontalDiv td {
+        border:0px ;
+        border-bottom:1px solid black;
+      }
+      table.hover  {
+        border:0px ;
+        padding-top:20px;
+        padding-right:20px;
+        border-collapse:collapse;
+        border-bottom:1px solid black;
+      }
+      table.hover th {
+        border:0px ;
+        border-bottom:1px solid black;
+      }
+      table.hover td {
+        border:0px ;
+        border-bottom:1px solid black;
+      }
+      table.hover tr:hover{
+        background-color:powderblue;
+      }
+
+
+
+
+
+    </style>
+  </head>
+  <body style="background-color:#F5ECA2">
+    <h1><span>HTML Table Styling</span></h1>
+    <ul>
+      <li><h2><span>HTML table-Zibra Stripes:</span></h2></li>
+      <ul>
+        <li>use tr:nth-child(even){background-color:colorname}</li>
+        <ul>
+          <li><table class="zebrastripes">
+            <tr>
+              <th>Name</th>
+              <th>Rollno</th>
+            </tr>
+            <tr>
+              <td>Abc</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Def</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Ghi</td>
+              <td>3</td>
+            </tr>
+          </table></li>
+        </ul>
+      </ul>
+      <li><h2><span>HTML Table-Vertical Zebra Stripes:</span></h2></li>
+      <ul>
+        <li>use tr:nth-child(even){background-color:colorname}</li>
+        <ul>
+          <li><table class="verticalzstripes">
+            <tr>
+              <th>Name</th>
+              <th>Rollno</th>
+            </tr>
+            <tr>
+              <td>Abc</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Def</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Ghi</td>
+              <td>3</td>
+            </tr>
+          </table></li>
+        </ul>
+      </ul>
+      <li><h2><span>Combine Vertical and Horizonatal Zebra Stripes:</span></h2></li>
+      <ul>
+        <li>Stripes on every other row and every other column.</li>
+        <ul>
+          <li><table class="combine">
+            <tr>
+              <th>Name</th>
+              <th>Rollno</th>
+            </tr>
+            <tr>
+              <td>Abc</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Def</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Ghi</td>
+              <td>3</td>
+            </tr>
+          </table></li>
+        </ul>
+      </ul>
+      <li><h2><span>Horizontal Dividers</span></h2></li>
+      <ul>
+        <li>Specify borders only at the bottom of each table row to have a table with horizontal dividers.Use <em>border-bottom</em> property.</li>
+        <ul>
+          <li><table class="horizontalDiv">
+            <tr>
+              <th>Name</th>
+              <th>Rollno</th>
+            </tr>
+            <tr>
+              <td>Abc</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Def</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Ghi</td>
+              <td>3</td>
+            </tr>
+          </table></li>
+        </ul>
+      </ul>
+      <li><h2><span>Hoverable table</span></h2></li>
+      <ul>
+        <li>Use <em>:hover</em> selector on <em>tr</em> to highlight table rows on mouse over:</li>
+        <ul>
+          <li><table class="hover">
+            <tr>
+              <th>Name</th>
+              <th>Rollno</th>
+            </tr>
+            <tr>
+              <td>Abc</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Def</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Ghi</td>
+              <td>3</td>
+            </tr>
+          </table></li>
+        </ul>
+      </ul>
+    </ul>
+  </body>
+</html>

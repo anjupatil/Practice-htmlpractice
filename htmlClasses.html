@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML class Attribute</title>
+  <link rel="stylesheet" href="htmlTable.css">
+  <style media="screen">
+    .city {
+      background-color: tomato;
+      color: white;
+      border: 2px solid black;
+      margin: 20px;
+      padding: 20px;
+    }
+    .html{
+      background-color:black;
+      color:white;
+    }
+    .content{
+
+      color:yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <h1><span>HTML Classes</span></h1>
+  <ul>
+    <li>
+      <p>The HTML class attribute is used to specify a class for an HTML element.
+        Multiple HTML elements can share the same class.</p>
+    </li>
+    <li>
+      <h2><span>Using The class Attribute</span></h2>
+    </li>
+    <ul>
+      <li>
+        <div class="city">Delhi is the capital of India.
+        </div>
+      </li>
+      <li>
+        <div class="city">Bangalore is the capital of Karnataka.
+        </div>
+      </li>
+      <li>This is <span style="background-color:powderblue;">span element</span></li>
+      <li>This is some <span style="background-color:powderblue;">important text</span></li>
+    </ul>
+    <li>
+      <h2><span>The Syntax For Class</span></h2>
+    </li>
+    <ul>
+      <li>To create a class; write a period (.) character,
+        followed by a class name. Then, define the CSS properties within curly braces {}:</li>
+    </ul>
+    <li>
+      <h2><span>Multiple Classes</span></h2>
+    </li>
+    <ul>
+      <li>HTML elements can belong to more than one class.To define multiple classes, separate the class names with a space, e.g. <em>div class="html content"</em>. The element will be styled according to all the classes specified.
+        In the following example, all <em>p</em> element belongs to the <em>html</em> class and 1st paragraph also belongs to the <em>content</em> class, and will get the CSS styles from both of the classes:</li>
+      <li><h2>HTML</h2></li>
+      <ul>
+        <li><p class="html content">HTML elements are the building blocks of HTML pages. With HTML constructs,
+          images and other objects such as interactive forms may be embedded into the rendered page.
+          </p></li>
+          <li><p class="html">HTML provides a means to create structured documents by denoting structural semantics for text such as
+          headings, paragraphs, lists, links, quotes and other items.</p></li>
+      </ul>
+    </ul>
+    <li>
+      <h2><span>Different Elements Can Share Same Class</span></h2>
+      <ul>
+        <li>Different HTML elements can point to the same class name.In the following example, both <em>h2</em> and <em>p</em>
+          point to the "html" class and will share the same style:</li>
+        <li><h2 class="html">HTML</h2></li>
+        <ul>
+          <li><p class="html">HTML elements are the building blocks of HTML pages. With HTML constructs,
+            images and other objects such as interactive forms may be embedded into the rendered page.
+            HTML provides a means to create structured documents by denoting structural semantics for text such as
+            headings, paragraphs, lists, links, quotes and other items.</p></li>
+
+        </ul>
+
+      </ul>
+    </li>
+    <li>
+      <h2><span>Use of The class Attribute in JavaScript</span></h2>
+    </li>
+
+
+
+
+  </ul>
+
+</body>
+
+</html>

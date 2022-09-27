@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Images</title>
+  <link rel="stylesheet" href="htmlExternal.css">
+</head>
+
+<body>
+  <h1 id="images" style="background-color:tomato;">HTML Images</h1>
+  <ul>
+    <li>
+      <p>HTML Images Syntax:</p>
+    </li>
+    <ul>
+      <li>
+        <p><img src="https://www.wikitechy.com/step-by-step-html-tutorials/img/html-images/code-explanation-image-tag-in-html.png" alt=""></p>
+      </li>
+      <li>
+        <p>img does not have a closing tag </p>
+      </li>
+      <li>
+        <p>src: specifies path to the image.</p>
+      </li>
+      <li>
+        <p>alt: specifies an alternate text for the image.If a browser cannot find an image, it will display the value of the <em>alt</em> attribute.</p>
+      </li>
+      <li>
+        <p>The width and height attributes always define the <em>width</em> and <em>height</em> of the image in pixels.</p>
+      </li>
+      <li>
+        <p>HTML allows animated GIFs.</p>
+      </li>
+    </ul>
+    <li>
+      <hr>
+      <p>Image Floating:</p>
+    </li>
+    <ul>
+      <table>
+        <tr>
+          <td>
+            <p>CSS float property to let the image float to the right or to the left of a text:</p>
+          </td>
+          <td>
+            <p><img src="https://www.psdstack.com/wp-content/uploads/2019/08/copyright-free-images-750x420.jpg" alt="" style="float:left; height:200px; width:200px;"></p>
+          </td>
+        </tr>
+      </table>
+
+    </ul>
+    <hr>
+    <li>
+      <p>HTML Image tags</p>
+    </li>
+    <ul>
+      <li>
+        <p>HTML img tag(already seen)</p>
+      </li>
+      <li>
+        <p>HTML map tag:An image map is an image with clickable areas.</p>
+      </li>
+      <li>
+        <p>HTML area tag:Defines a clickable area inside an image map.</p>
+      </li>
+      <ul>
+        <li>
+          <p>Click on sun</p>
+        </li>
+        <li>
+          <p><img src="https://images.unsplash.com/photo-1617980062787-1f24102227a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29weXJpZ2h0JTIwZnJlZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60" alt="sunrise" usemap="#sunmap">
+            <map name="sunmap"><area shape="rect" coords="325,446,234,365" href="https://en.wikipedia.org/wiki/Sunrise" alt="link to wikipedia page">
+
+            </map>
+          </p>
+        </li>
+      </ul>
+
+      <li>
+        <p>HTML picture tag:Defines a container for multiple image resources.Reduce width<-> of window to see different images.</p>
+        <ul>
+          <li>
+
+              <picture>
+                <source srcset="https://www.w3schools.com/tags/img_white_flower.jpg" media="(min-width:650px)" type="">
+                <source srcset="https://www.w3schools.com/tags/img_orange_flowers.jpg" media="(min-width:465px)" type="">
+                  <img src="https://www.psdstack.com/wp-content/uploads/2016/10/morguefile-3.jpg" alt="">
+              </picture>
+
+          </li>
+        </ul>
+      </li>
+
+      <li><p><a href="htmlBackgroundImage.html">HTML Background Image</a></p></li>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colspan and Rowspan</title>
+  <link rel="stylesheet" href="htmlTable.css">
+  <style media="screen">
+    table{
+      border:1px solid red;
+      border-collapse:collapse;
+    }
+    th,td{
+        border:1px solid red;
+    }
+  </style>
+
+</head>
+
+<body style="background-color:#F5ECA2">
+  <h1><span>Colspan and Rowspan</span></h1>
+  <ul>
+    <li>
+      <p>HTML tables can have cells that span over multiple rows and columns.</p>
+    </li>
+    <ul>
+      <li>
+        <h2><span>HTML Table-Colspan</span></h2>
+      </li>
+      <ul>
+        <li><em>colspan</em> attribute</li>
+        <ul>
+          <li>
+            <table>
+              <tr>
+                <th colspan="2">Name</th>
+
+                <th>Rollno</th>
+              </tr>
+              <tr>
+                <td>Abc</td>
+                <td>xyz</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Def</td>
+                <td>stu</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Efg</td>
+                <td>vuw</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>Mno</td>
+                <td>fgh</td>
+                <td>4</td>
+              </tr>
+
+            </table>
+          </li>
+        </ul>
+      </ul>
+      <li><h2><span>HTML Table-Rowspan</span></h2></li>
+      <ul>
+        <li><em>rowspan</em> attribute</li>
+        <ul>
+
+          <li>
+            <table>
+              <tr>
+                <th>Name</th>
+                <td>Abc</td>
+
+              </tr>
+              <tr>
+                <th rowspan="2">phoneno</th>
+                <td>1234</td>
+              </tr>
+              <tr>
+                  <td>3456</td>
+              </tr>
+
+            </table>
+          </li>
+        </ul>
+      </ul>
+
+
+    </ul>
+
+  </ul>
+
+</body>
+
+</html>

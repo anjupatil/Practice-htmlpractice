@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Headers</title>
+      <link rel="stylesheet" href="htmlTable.css">
+
+    <style media="screen">
+      th {
+        text-align:left;
+        border: 5px solid white;
+      }
+      td {
+        border: 5px solid white;
+      }
+      table {
+
+        border: 5px solid white;
+      }
+
+
+    </style>
+  </head>
+  <body style="background-color:#F5ECA2">
+    <h1><span>HTML Table Headers</span></h1>
+    <ul>
+      <li><h2><span>HTML Table Headers</span></h2></li>
+      <ul>
+        <li>Table headers are defined with <em>th</em> elements. Each <em>th</em> element represents a table cell.</li>
+        <li><table style="width:50%; background-color:powderblue;">
+          <tr>
+            <th>Name</th>
+            <th>Rollno</th>
+            <th>Address</th>
+          </tr>
+          <tr>
+            <td>Abc</td>
+            <td>Efg</td>
+            <td>Hij</td>
+          </tr>
+          <tr>
+            <td>Klm</td>
+            <td>Nop</td>
+            <td>Qrs</td>
+          </tr>
+        </table></li>
+      </ul>
+      <li><h2><span>Vertical Table Headers</span></h2></li>
+      <ul>
+        <li>To use the first column as table headers, define the first cell in each row as a <em>th</em> element:</li>
+        <li><table style="width:50%; background-color:powderblue;">
+          <tr>
+            <th>Name</th>
+            <td>Abc</td>
+            <td>def</td>
+          </tr>
+          <tr>
+            <th>Rollno</th>
+            <td>1</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Address</th>
+            <td>Nop</td>
+            <td>Qrs</td>
+          </tr>
+        </table></li>
+      </ul>
+      <li><h2><span>Align Table Headers</span></h2></li>
+      <ul>
+        <li>By default, table headers are bold and centered:</li>
+        <li>To left-align the table headers, use the CSS <em>text-align</em> property:</li>
+        <li><table class="t1" style="width:50%; background-color:powderblue;">
+          <tr>
+            <th>Name</th>
+            <th>Rollno</th>
+            <th>Address</th>
+          </tr>
+          <tr>
+            <td>Abc</td>
+            <td>Efg</td>
+            <td>Hij</td>
+          </tr>
+          <tr>
+            <td>Klm</td>
+            <td>Nop</td>
+            <td>Qrs</td>
+          </tr>
+        </table></li>
+      </ul>
+      <li><h2><span>Header for Multiple Columns</span></h2></li>
+      <ul>
+        <li>You can have a header that spans over two or more columns.</li>
+        <li>To do this, use the <em>colspan</em> attribute on the <em>th</em> element:</li>
+        <li><table style="width:50%; background-color:powderblue;">
+          <tr>
+            <th colspan="2">Name</th>
+            <th>Rollno</th>
+
+          </tr>
+          <tr>
+            <td>Abc</td>
+            <td>Hij</td>
+            <td>1</td>
+
+          </tr>
+          <tr>
+            <td>Klm</td>
+            <td>Nop</td>
+            <td>2</td>
+
+          </tr>
+        </table></li>
+      </ul>
+      <li><h2><span>Table Caption</span></h2></li>
+      <ul>
+        <li>You can add a caption that serves as a heading for the entire table</li>
+        <li>To add a caption to a table, use the <em>caption</em> tag:</li>
+        <li><table style="width:50%; background-color:powderblue;">
+          <caption><strong>Monthly Savings</strong></caption>
+          <tr>
+            <th>Month</th>
+            <th>Savings</th>
+          </tr>
+          <tr>
+            <td>January</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>Savings</td>
+            <td>$50</td>
+          </tr>
+        </table></li>
+      </ul>
+
+
+    </ul>
+  </body>
+</html>
